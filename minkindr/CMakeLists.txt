@@ -13,10 +13,12 @@ if (CATKIN_ENABLE_TESTING)
 	  test/test-transformation.cc
 	  test/test-transformation-2d.cc
 	)
-endif() #CATKIN_ENABLE_TESTING
+
 
 target_link_libraries(${PROJECT_NAME}_tests ${catkin_LIBRARIES} 
                                             ${CMAKE_THREAD_LIBS_INIT})
+
+endif() #CATKIN_ENABLE_TESTING
 
 # Add all files to show up in QtCreator.
 FILE(GLOB_RECURSE LibFiles "include/*")
